@@ -1,12 +1,103 @@
+<!-- FILE FOR LEARNING HTML SYNTAX-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Learning HTML syntax</title>
 </head>
 <body>
+
     
-</body>
+    <h1>1st level headline</h1>
+    <h2>2nd level headline</h2>
+    <h3>3rd level headline</h3>
+    <h4>4th level headline</h4>
+    <h5>5th level headline</h5>
+    <h6>6th level headline</h6>
+    <p>This is a paragraph enclosed within opening and closing p tags.</p>    
+    
+    <!--HTML Entities-->
+    <p>
+        &amp; gives is the ampersand<br>
+        &nbsp; gives a non-breaking space to let browsers know never to do a line break at that space. It can also be used to add additional spaces if needed without the browser ignoring the additional spaces.<br> 
+        &lt; gives us the less than sign<br>
+        &gt; gives us the greater than sign<br>
+        These two can be used to provide brackets and help us display code on the page that will not be executed by HTML.</p>
+
+        &lt;br&gt; tag gives us the line break. It's an empty tag.
+        <br>
+
+        &lt;pre&gt; and &lt;code &gt; are used together to display code with indentation on a page. 
+        &lt;code&gt; tells the informs the browser that the content is code, while &lt;pre&gt; makes sure indentation in the code is not lost.
+        <br>
+    </p>
+
+    <!--Marking up text-->
+    <p>
+        <i>&lt;i&gt; is used for visual-only italics.</i><br>
+        <em>&lt;em&gt; is used for emphasis italics.</em><br>
+        <b>&lt;b&gt; is used for visual-only bold.</b><br>
+        <strong>&lt;strong&gt; is used for content of greater importance.</strong><br>
+        Subscripts are characters that are set <sub>below</sub> the normal baseline for text.<br>
+        Superscripts are characters that are set <sup>above</sup> the normal baseline of text.<br>
+        We can use &lt;small&gt; to convey that a content has very little prominence such as fine print at the bottom of a web page.<br>
+    </p>
+
+    <!--3 kinds of lists: Unordered, Ordered, Definition List-->
+    <ul>
+        <li>unordered list item</li>
+        <li>unordered list item</li>
+        <li>unordered list item</li>
+    </ul>
+
+    <ol>
+        <li>ordered list item</li>
+        <li>ordered list item</li>
+        <li>ordered list item</li>
+
+    </ol>
+    
+    <dl>
+        <dt>term</dt>
+            <dd>definition</dd>
+        <dt>term</dt>
+            <dd>definition</dd>
+        <dt>term</dt>
+            <dd>definition</dd>
+    </dl>
+
+    <!--Quotes-->
+    <p>&lt;q&gt; is used for inline quotes. <br>
+    blockquotes are presented as a block-level element.</p>
+    <blockquote>
+        The most difficult thing is the decision to act. The rest is merely tenacity. The fears are paper tigers. You can do anything you decide to do. You can act to change and control your life; and the procedure, the process, is its own reward.
+        <cite>- Amelia Earhart</cite>
+    </blockquote>
+
+    <!--Date & Time-->
+    <p>The time element is used to format. It has container tags. We can use attributes with the time tag, such as datetime which requires a machine-readable "YYYY-MM-DD HH:MM:SS" format.</p>
+    <time datetime="1998-03-10">March 10</time><br>
+    <time datetime="1998-03-10">March 10, 1998</time><br>
+    <time datetime="1998-03-10">10 March 1998</time><br>
+
+    <!--Attributes-->
+    <p>
+    Global attributes are attributes that can be used on any element.<br>
+    The class attribute allows us to target all elements with that class.<br>
+    The id attribute allows us to target a unique elment with that id. Unlike class attributes, it is only used once in an entire HTML page.<br>
+    ARIA Roles are HTML attributes that provide accessible information about specific elements.<br>
+    </p>
+
+    <!--Linking-->
+    <p>
+        HTTPS: Hypertext Transport Protocol Secure<br>
+        <a href="https://#">This is a  link that uses an Absolute URL</a><br>
+        If we are linking within the same domain page, we can use relative URL:<br>
+        <a href="/thispage">This is a link that uses a Relative URL</a><br>
+        When the browser is directed to a folder, it automatically looks for index.html within that page to load.<br>
+    </p>
+    </body>
 </html>
