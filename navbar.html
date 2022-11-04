@@ -1,0 +1,49 @@
+<!--Files for learning nav bar basics-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <link rel="stylesheet" href="css/navbar.css"> <!--From root, go to folder "css" > navbar.css file -->
+</head>
+<body>
+    <h1>Learning Nav Bar</h1>
+    <p>One use of lists is to create navigation bars. Lists provide the structure of the nav bar.<br>
+    We can wrap the whole nav bar using the &lt;nav&gt; element which will mark up elements that are part of the site navigation.<br>
+    It is not used all the time, but mainly for major blocks of navigation.</nav></p>
+
+    <!-- In this case, we use an ARIA role along with the nav element to enhance accesibility.
+    Since this is the main navigation of the page, we give it the role="navigation"
+    The aria-label is what will be read out loud by the screen reader. -->
+    <nav role="navigation" aria-label="main menu"> 
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/team">Team</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--This is an example of a breadcrumb nav bar on the same page
+    Since it's not the main navigation, we just give it an aria-label-->
+    <nav>
+        <ul class="breadcrumb" aria-label="Breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/people">Blog</a></li>
+            <li><a href="/contact">March</a></li>
+            <li>March 1st Update</li>
+        </ul>
+    </nav>
+
+    <!--Since we just have these two elements, it's not necessary to use nav and list elements.
+    We can just wrap it within a footer element-->
+    <footer>
+        <a href="/about/privacy">Privacy Policy</a> | 
+        <a href="/about/legal">Terms of Service</a>
+    </footer>
+
+</body>
+</html>
