@@ -5,12 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    <link rel="stylesheet" href="css/form.css">
 </head>
 <body>
     <form>
-        <label>Name: <input name="name" type="text" required></label>
-        <label>Email: <input name="email" type="email" required placeholder="me@example.com"></label>
-        <button type="submit">Sign up!</button>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="me@exaample.com" required>
+    
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" required>
+
+        <label for="search">Search</label>
+        <input for="search" name="search" type="search">
+
+        <label for="phone">Phone Number</label>
+        <input for="phone" name="phone" type="tel">
+        
+        <label for="textarea">Text Area</label>
+        <textarea id="textarea" name="textarea"></textarea>
+        <button type="submit">Submit</button>
+
+        <label for="date">Date</label>
+        <input id="date" name="date" type="date">
+
+        <label for="color">Colour</label>
+        <input id="color" name="color" type="color">
+
+        <label for="file">Attach File(s)</label>
+        <input id="file" name="file" type="file" accept="image/*" multiple>
+
+        <!--DROP DOWN/SELECT LIST-->
+        <label for="selectlist">Choose one</label>
+        <select id="selectlist" name="selectlist">
+            <option>Option A</option>
+            <option>Option B</option>
+            <option>Option C</option>
+        </select>
+
+        <!--FIELDSET CHECKBOXES-->
+        <fieldset>
+            <legend>Checkboxes  in a fieldset:</legend>
+            <input id="first" name="checkboxlist" type="checkbox" value="This" checked>
+            <label for="first">This</label>
+
+            <input id="second" name="checkboxlist" type="checkbox" value="And/Or">
+            <label for="second">And/Or</label>
+
+            <input id="third" name="checkboxlist" type="checkbox" value="That">
+            <label for="third">That</label>
+        </fieldset>
+
+        <!--FIELDSET RADIOBUTTONS-->
+        <fieldset>
+            <legend>Radio buttons in a fieldset:</legend>
+            <input id="first" name="radiobutton" type="radio" value="This" checked>
+            <label for="first">This</label>
+
+            <input id="second" name="radiobutton" type="radio" value="Or">
+            <label for="second">Or</label>
+
+            <input id="third" name="radiobutton" type="radio" value="That">
+            <label for="third">That</label>
+        </fieldset>
     </form>
 </body>
 </html>
