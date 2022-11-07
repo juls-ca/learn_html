@@ -7,16 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning HTML syntax</title>
+    <link rel="stylesheet" href="css/styles.css"> 
 </head>
 <body>
+    <h1>HTML Notes</h1>
 
-    
-    <h1>1st level headline</h1>
-    <h2>2nd level headline</h2>
-    <h3>3rd level headline</h3>
-    <h4>4th level headline</h4>
-    <h5>5th level headline</h5>
-    <h6>6th level headline</h6>
+    <h2>Heading elements:</h2>
+    <h1>1st level heading</h1>
+    <h2>2nd level heading</h2>
+    <h3>3rd level heading</h3>
+    <h4>4th level heading</h4>
+    <h5>5th level heading</h5>
+    <h6>6th level heading</h6>
     <p>This is a paragraph enclosed within opening and closing p tags.</p>    
     
     <!--HTML Entities-->
@@ -99,5 +101,60 @@
         <a href="/thispage">This is a link that uses a Relative URL</a><br>
         When the browser is directed to a folder, it automatically looks for index.html within that page to load.<br>
     </p>
+
+    <!--Images-->    
+    <p>4 attributes are declared with the img element: src, alt, width, height.<br>
+    Syntax:<br>
+    < img src="#" alt="Alternative text for image" width="#" height="#"><br>
+    We can add srcset attribute to provide browsers different image resources along with size information so that browser can pick the most appropriate imaage. Also minimizes bandwith consumption. 
+    <br>
+    Wrapping img within &lt;figure> and pairing it with &lt;figcaption> gives the browser more semantic information about the content:
+    <code><pre>
+        &lt;figure>
+            < img src="#" alt="test">
+            &lt;figcaption>This is a caption for the image.&lt;/figcaption>
+        &lt;/figure>
+    </pre></code>
+    
+    <!--Audio-->
+    &lt;audio&gt; element is used to place audio in a page (has a closing tag).<br>
+    Syntax:
+    &lt;audio controls src="audio.mp3" loop autoplay>&lt;/audio><br>
+    The controls attribute will include a controls interface if they are available.<br>
+    Loop will loop the song when it ends. Autoplay will automatically play the audio as soon as the page loads.<br>
+
+    We can provide more than one audio file using the source element (different from src attribute):
+    <code><pre>
+    &lt;audio controls>
+        &lt;source src="audio.ogg"
+            type="audio/off">
+        &lt;source src="audio.mp3"
+            type="audio/mpeg">
+    &lt;audio>
+    </code></pre>
+
+    <!--Video-->
+    &lt;video> elements adds video files to a page (has a closing tag).<br>
+    We can also add the controls attribute to tell the browser to create a video player for us.<br>
+    We can also use the source element to provide the browser different file formats.<br>
+    Unlike with pictures, there's nothing in HTML that allows us to send different suze of video because we don't want a device to only get one moment to make a choice between different video definitions.<br>
+    Devices are constanctly switching from one resolution to another, a technique called <b>adaptive bitrate streaming</b> taht consider's the device resolution and network speed at any moment.<br>
+    This is why using embed codes from a video hosting service is more common than using the video element to put a video on a website.<br>
+    The track element allow us to point to a text file for captioning.<br>
+    Syntax: <br>
+    <code>&lt;track src="#" kind="captions" label="english" srclang="en" default><br></code>
+    <ul>
+        <li>src attribute for file source</li>
+        <li>kind attribute tells the browser that the file is for captions. Can also have value substitutions, description, chapters, etc...</li>
+        <li>label of english attribute will show up in the player as a label for this choice</li>
+        <li>srclang specifies the language</li>
+        <li>default attribute specific that this track is th eone we want to use by default when the user turns on caption</li>
+    </ul>
+
+    <!-- DIV & SPAN-->
+    <h2>&lt;div> and &lt;span></h2>
+    div is a block level element and span is an inline element.<br>
+    They are used to group elements, create containers, and label html content for styling.<br>
+
     </body>
 </html>
