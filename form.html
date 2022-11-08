@@ -8,43 +8,67 @@
     <link rel="stylesheet" href="css/form.css">
 </head>
 <body>
-    <form>
+    <h1>Form Input Types:</h1>
+    <form id="test" method="get" action="">
         <label for="name">Name</label>
         <input id="name" name="name" type="text" required>
-
+        <br>
         <label for="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="me@exaample.com" required>
-    
+        <input id="email" name="email" type="email" placeholder="me@example.com" required>
+        <br>
+        <label for="website">Website</label>
+        <input id="website" name="url" type="url" placeholder="https://mywebsite.com" required>
+        <br>
         <label for="password">Password</label>
         <input id="password" name="password" type="password" required>
-
+        <br>
         <label for="search">Search</label>
-        <input for="search" name="search" type="search">
-
+        <input id="search" name="search" type="search">
+        <br>
+        <label for="number">Number</label>
+        <input id="number" name="number" type="number">
+        <br>
         <label for="phone">Phone Number</label>
-        <input for="phone" name="phone" type="tel">
-        
+        <input id="phone" name="phone" type="tel">
+        <br>
+        <label for="range">Range</label>
+        <input id="range" name="range" type="range" min="0" max="10" step="1">
+        <br>
         <label for="textarea">Text Area</label>
         <textarea id="textarea" name="textarea"></textarea>
-        <button type="submit">Submit</button>
-
+        <br>
         <label for="date">Date</label>
         <input id="date" name="date" type="date">
-
+        <br>
+        <label for="time">Time</label>
+        <input id="time" name="time" type="time">
+        <br>
         <label for="color">Colour</label>
         <input id="color" name="color" type="color">
-
+        <br>
         <label for="file">Attach File(s)</label>
         <input id="file" name="file" type="file" accept="image/*" multiple>
-
+        <br>
         <!--DROP DOWN/SELECT LIST-->
-        <label for="selectlist">Choose one</label>
+        <label for="selectlist">Choose one: </label>
         <select id="selectlist" name="selectlist">
             <option>Option A</option>
             <option>Option B</option>
             <option>Option C</option>
         </select>
-
+        <br>
+        <label for="selectlist2">Choose two: </label>
+        <select name="selectlist2" id="selectlist2" multiple size="6">
+            <optgroup label="Numbers">
+                <option value="value1">Value 1</option>
+                <option value="value2">Value 2</option>
+            </optgroup>
+            <optgroup label="Letters">
+                <option value="valueA">Value A</option>
+                <option value="valueB">Value B</option>
+            </optgroup>
+            </select>
+        <br><br>
         <!--FIELDSET CHECKBOXES-->
         <fieldset>
             <legend>Checkboxes  in a fieldset:</legend>
@@ -57,7 +81,7 @@
             <input id="third" name="checkboxlist" type="checkbox" value="That">
             <label for="third">That</label>
         </fieldset>
-
+        <br>
         <!--FIELDSET RADIOBUTTONS-->
         <fieldset>
             <legend>Radio buttons in a fieldset:</legend>
@@ -70,6 +94,11 @@
             <input id="third" name="radiobutton" type="radio" value="That">
             <label for="third">That</label>
         </fieldset>
+
+        
+        <br>
+        <input type="Submit">
+        <input type="reset" value="Reset form">
     </form>
 </body>
 </html>
