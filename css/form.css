@@ -13,13 +13,32 @@ input, button, select, textarea {
 }
 
 input {
-    width: 10em;
     margin: 5px;
     border-width: 1px;
 }
 
 #selectlist2 {
     vertical-align: middle;
+}
+
+fieldset {
+    color: #0068e3;
+    padding: 5px;
+    width: 300px;
+}
+
+select {
+    margin: 10px 0px 10px 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    padding: 5px 10px;
+}
+
+select:not([multiple]) { /*applies styling to any select elements that don't have the multiple attribute*/
+    background-color: rgb(192, 241, 179);
+    padding: 5px;
 }
 
 /*TARGETS A SPECIFIC INPUT TYPE*/
@@ -31,10 +50,10 @@ input[type="url"] {
     width: 20em;
 }
 
-
-/*STYLES ALL LABELS*/
-label {
-    /*font-weight: bold;*/
+input[type="submit"], input[type="reset"] {
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 5px;
 }
 
 /*
