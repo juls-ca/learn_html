@@ -1,1 +1,48 @@
 /*STYLESHEET FOR FORM.HTML*/
+body {
+    background-color: whitesmoke;
+    font-family: 'Work Sans', sans-serif;
+    color: rgb(51, 51, 51);
+}
+
+input, button, select, textarea {
+    font-size: 100%;
+    font-family: 'Work Sans', sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input {
+    width: 10em;
+    margin: 5px;
+    border-width: 1px;
+}
+
+#selectlist2 {
+    vertical-align: middle;
+}
+
+/*TARGETS A SPECIFIC INPUT TYPE*/
+input[type="file"] {
+    font-size: 12px;
+}
+
+input[type="url"] {
+    width: 20em;
+}
+
+
+/*STYLES ALL LABELS*/
+label {
+    /*font-weight: bold;*/
+}
+
+/*
+input:valid {
+    border: 2px solid green;
+}
+
+input:invalid {
+    border: 2px dashed red;
+}
+*/
