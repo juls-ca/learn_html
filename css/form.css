@@ -9,12 +9,20 @@ input, button, select, textarea {
     font-size: 100%;
     font-family: 'Work Sans', sans-serif;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    box-sizing: border-box; /*this declaration makes sure the different fields are of consistent width*/
+    margin: 2px auto 10px auto
 }
 
-input {
-    margin: 5px;
-    border-width: 1px;
+label {
+    display: block;
+}
+
+input, select {
+    border-radius: 5px;
+}
+
+input[type="checkbox"] + label, input[type="radio"] + label {
+    display: inline;
 }
 
 #selectlist2 {
@@ -25,6 +33,7 @@ fieldset {
     color: #0068e3;
     padding: 5px;
     width: 300px;
+    border-width: 1px;
 }
 
 select {
@@ -56,12 +65,42 @@ input[type="submit"], input[type="reset"] {
     padding: 5px;
 }
 
-/*
-input:valid {
-    border: 2px solid green;
+/* PSEUDO-CLASSES */
+/*triggered when a user clicks on, taps, or tabs into a field*/
+input:focus {
+    background-color: rgb(245, 255, 189);
 }
 
+/*triggered when a user activates the field, such as clicking a button
+input:active {
+    background-color: red;
+}
+*/
+
+
+/*applies styling to inputs that users are able to fill out
+input:enabled {...}
+*/
+
+/*applies styling to inputs that users are prohibited from
+:disabled {
+    background-color: transparent;
+}
+*/
+
+/*applies styling to checked checkbox options
+input[type="checkbox"]:checked + label {...}
+*/
+
+:selected {
+
+}
+/*applies styling to valid user input
+input:valid {...}
+*/
+
+/*applies styling to invalid user input (EG: field requirements have not been met)
 input:invalid {
-    border: 2px dashed red;
+    border: 2px solid red;
 }
 */
