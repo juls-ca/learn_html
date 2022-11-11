@@ -1,7 +1,6 @@
 body {
-    background-color: #e6e6e6;
+    background-color: #74a174;;
     font-family: 'Nunito', sans-serif;
-    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,9 +13,19 @@ body {
     display: flex;
     flex-direction: column;
     padding: 50px;
+    margin: 0px;
+}
+
+h1 {
+    margin: 0px auto 30px auto;
+    padding: 0px;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 50px;
+    color: #D8A800;
 }
 
 input, select, textarea {
+    font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -30,20 +39,24 @@ input, select, textarea {
     
 }
 
-h1 {
-    margin: 0px auto 30px auto;
-    padding: 0px;
-    font-family: 'Paytone One', sans-serif;
+input::placeholder, textarea::placeholder {
+    font-family: 'Nunito', sans-serif;
+}
+
+select {
+
+}
+textarea {
+    min-width: 400px;
+    min-height: 100px;
 }
 
 input[type="submit"] {
     margin: 20px auto 0px auto;
     justify-content: center;
-    background-color: #333;
+    background-color: #649865;
     color: #ffffff;
     font-weight: bolder;
+    font-size: larger;
 }
 
-textarea {
-    min-width: 400px;
-}
