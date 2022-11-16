@@ -1,33 +1,136 @@
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+/*NAV B STYLE DECLARATIONS*/
+.navB {
+  border: 5px solid #FE7F2D;
+  background-color: #233D4D;
+  width: 75%; /*span 75% of the width*/
+  margin: 0 auto; /*auto will distribute the remaining 25% space between left and right*/
+}
+
+.navB ul {
+  list-style-type: none; /*removes bullets of ul list items. NOTE: have to apply it to the ul, not li */
+  padding: 0;
+  margin: 0;
+}
+
+.navB li {
+  padding: 0;
+  margin: 0;
+}
+.navB a {
+  text-decoration: none; /*removes the underline of links for navA*/
+  color: #f5f5f5;
+  display: block; /*turns each a to a block level element which will enlarge the clickable area*/
+  padding-left: 10px;
+}
+
+.navB a:hover { /*styles links when in hover state*/
+  background-color: #FCCA46;
+  color: #233D4D;
+}
+
+
+/*NAV C STYLE DECLARATIONS*/
+/*from https://www.w3schools.com/howto/howto_css_breadcrumbs.asp*/
 /* Style the list */
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
   background-color: #eee;
 }
-
 /* Display list items side by side */
 ul.breadcrumb li {
   display: inline;
-  font-size: 18px;
+  font-size: 16px;
 }
-
 /* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li+li:before {
   padding: 8px;
   color: black;
   content: "/\00a0";
 }
-
 /* Add a color to all links inside the list */
 ul.breadcrumb li a {
-  color: #0275d8;
+  color: #233D4D;
   text-decoration: none;
 }
-
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
-  color: #01447e;
+  color: #FE7F2D;
   text-decoration: underline;
 }
 
-/*from https://www.w3schools.com/howto/howto_css_breadcrumbs.asp*/
+/*NAV D STYLE DECLARATIONS*/
+.navD {
+  background-color: #eee;
+  padding: 10px;
+}
+.navD ul {
+  list-style-type: none;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+.navD li {
+  display: inline-block; /*turns the links into horizontal inline-block elements*/
+  padding: 10px;
+}
+
+.navD a {
+  text-decoration: none;
+  color: #233D4D;
+  padding: 5px 10px;
+}
+
+.navD a:hover {
+  color: #FFFFFF;
+  background-color: #FE7F2D; 
+  border-radius: 5px;
+}
+
+/*NAV E STYLE DECLARATIONS*/
+.navE {
+  background-color: #233D4D;
+  padding: 15px 0px;
+}
+.navE ul {
+  list-style-type: none;
+  display: flex; /*turns ul into the flex container, with li items as child elements*/
+  justify-content: right;
+  gap: 5px; /*adds gap between child elements*/
+  padding: 0;
+  margin: 0;
+
+}
+
+.navE a {
+  text-decoration: none;
+  color: #f5f5f5;
+  padding: 20px; /* increases clickable area*/
+}
+
+.navE a:hover {
+  text-decoration: underline;
+  color: #FCCA46;
+}
+
+/*FOOTER STYLE DECLARATIONS*/
+footer {
+  background-color: #FCCA46;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  
+}
+footer a {
+  text-decoration: none;
+  color: #233D4D
+}
+
+footer a:hover {
+  color: #FFFFFF;
+}
