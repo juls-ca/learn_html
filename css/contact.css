@@ -24,6 +24,7 @@ h1 {
     font-family: 'Paytone One', sans-serif;
     font-size: 50px;
     color: #D8A800;
+    text-align: center;
 }
 
 input, select, textarea {
@@ -45,9 +46,6 @@ input::placeholder, textarea::placeholder {
     font-family: 'Nunito', sans-serif;
 }
 
-select {
-
-}
 textarea {
     min-width: 400px;
     min-height: 100px;
@@ -61,4 +59,14 @@ input[type="submit"] {
     font-weight: bolder;
     font-size: larger;
     width: 30%
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        padding: 50px 0px;
+    }
+    #main-container {
+        padding: 15px;
+        margin: 0;
+    }
 }
